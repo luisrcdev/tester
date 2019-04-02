@@ -7,7 +7,68 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      @font-face{font-family:'Calluna';
+ src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/callunasansregular-webfont.woff') format('woff');
+}
+body {
+	background: url(//subtlepatterns.com/patterns/scribble_light.png);
+  font-family: Calluna, Arial, sans-serif;
+  min-height: 1000px;
+}
+#columns {
+	column-width: 320px;
+	column-gap: 15px;
+  width: 90%;
+	max-width: 1100px;
+	margin: 50px auto;
+}
 
+div#columns figure {
+	background: #fefefe;
+	border: 2px solid #fcfcfc;
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 0 2px 15px;
+	padding: 15px;
+	padding-bottom: 10px;
+	transition: opacity .4s ease-in-out;
+  display: inline-block;
+  column-break-inside: avoid;
+}
+
+div#columns figure img {
+	width: 100%; height: auto;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+}
+
+div#columns figure figcaption {
+  font-size: .9rem;
+	color: #444;
+  line-height: 1.5;
+}
+
+div#columns small { 
+  font-size: 1rem;
+  float: right; 
+  text-transform: uppercase;
+  color: #aaa;
+} 
+
+div#columns small a { 
+  color: #666; 
+  text-decoration: none; 
+  transition: .4s color;
+}
+
+
+
+@media screen and (max-width: 750px) { 
+  #columns { column-gap: 0px; }
+  #columns figure { width: 100%; }
+}
+    </style>
     <title>Dom | Inicio</title>
   </head>
   <body>
@@ -42,7 +103,57 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2 class="my-4">Página principal</h2>
+            <div id="columns">
+              <figure>
+                      <img src="https://picsum.photos/30/20">
+                        <figcaption>Primer imagen</figcaption>
+                        </figure>
+          <figure>
+          <img src="https://picsum.photos/200/200">
+            <figcaption>Cinderella wearing European fashion of the mid-1860’s</figcaption>
+            </figure>
+            
+            <figure>
+            <img src="https://picsum.photos/240/300">
+            <figcaption>Rapunzel, clothed in 1820’s period fashion</figcaption>
+            </figure>
+            
+          <figure>
+            <img src="https://picsum.photos/200/300">
+            <figcaption>Belle, based on 1770’s French court fashion</figcaption>
+            </figure>
+          
+            <figure>
+            <img src="https://picsum.photos/100/200">
+            <figcaption>Mulan, based on the Ming Dynasty period</figcaption>
+            </figure>
+            
+           <figure>
+             <img src="https://picsum.photos/210/310">
+            <figcaption>Sleeping Beauty, based on European fashions in 1485</figcaption>
+            </figure>
+            
+           <figure>
+             <img src="https://picsum.photos/130/300">
+            <figcaption>Pocahontas based on 17th century Powhatan costume</figcaption>
+            </figure>
+          
+            <figure>
+            <img src="https://picsum.photos/230/120">
+            <figcaption>Snow White, based on 16th century German fashion</figcaption>
+            </figure>	
+          
+           <figure>
+            <img src="https://picsum.photos/100/300">
+            <figcaption>Ariel wearing an evening gown of the 1890’s</figcaption>
+            </figure>
+          
+            <figure>
+            <img src="https://picsum.photos/200/100">
+            <figcaption>Tiana wearing the <i>robe de style</i> of the 1920’s</figcaption>
+            </figure>	
+          
+            </div>
           </div>
         </div>
       </div>
